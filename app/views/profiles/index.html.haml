@@ -1,0 +1,6 @@
+.container
+	= current_user.name
+
+	= form_with model: @profile, local: true  do |form|
+		= form.file_field :image
+		= form.submit
